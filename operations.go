@@ -194,6 +194,6 @@ type ReKeyRequest struct {
 	UniqueIdentifier string `kmip:"UNIQUE_IDENTIFIER,required"`
 }
 
-type ReyKeyResponse struct {
+type ReKeyResponse struct {
 	UniqueIdentifier string `kmip:"UNIQUE_IDENTIFIER,required"`
 }
