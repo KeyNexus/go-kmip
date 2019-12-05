@@ -71,7 +71,7 @@ func (bi *ResponseBatchItem) BuildFieldValue(name string) (v interface{}, err er
 	case OPERATION_SIGN:
 		v = &SignResponse{}
 	case OPERATION_REKEY:
-		v = &ReyKeyResponse{}
+		v = &ReKeyResponse{}
 	default:
 		err = errors.Errorf("unsupported operation: %v", bi.Operation)
 	}
