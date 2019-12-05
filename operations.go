@@ -189,3 +189,11 @@ type SignResponse struct {
 	SignatureData    []byte `kmip:"SIGNATURE_DATA"`
 	CorrelationValue []byte `kmip:"CORRELATION_VALUE"`
 }
+
+type ReKeyRequest struct {
+	UniqueIdentifier string `kmip:"UNIQUE_IDENTIFIER,required"`
+}
+
+type ReyKeyResponse struct {
+	UniqueIdentifier string `kmip:"UNIQUE_IDENTIFIER,required"`
+}
